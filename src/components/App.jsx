@@ -15,7 +15,6 @@ export class App extends Component {
     filter: '',
   };
   componentDidMount() {
-    // const contacts = localStorage.getItem('contacts')
     const parseContacts = JSON.parse(localStorage.getItem('contacts'));
     if (parseContacts) {
       this.setState({
